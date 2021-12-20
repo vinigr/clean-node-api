@@ -10,7 +10,7 @@
     "test:verbose": "jest --runInBand",
     "test:unit": "npm test -- --watch -c jest-unit-config.js",
     "test:integration": "npm test -- --watch -c jest-integration-config.js",
-    "test:staged": "npm test -- --findRelatedTests",
+    "test:staged": "npm test -- -o --forceExit",
     "test:ci": "npm test -- --coverage"
   },
   "keywords": [],
