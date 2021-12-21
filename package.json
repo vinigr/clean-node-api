@@ -6,11 +6,11 @@
   "scripts": {
     "start": "sucrase-node src/main/server.ts",
     "prepare": "husky install",
-    "test": "jest --silent --noStackTrace --runInBand",
+    "test": "jest --silent --noStackTrace --runInBand --forceExit",
     "test:verbose": "jest --runInBand",
     "test:unit": "npm test -- --watch -c jest-unit-config.js",
     "test:integration": "npm test -- --watch -c jest-integration-config.js",
-    "test:staged": "npm test -- -o --forceExit",
+    "test:staged": "npm test -- -o",
     "test:ci": "npm test -- --coverage"
   },
   "keywords": [],
