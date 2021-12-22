@@ -55,8 +55,7 @@ describe('LogController Decorator', () => {
   })
 
   test('should return the same result of the controller', async () => {
-    const { sut, controllerStub } = makeSut()
-    const handleSpy = jest.spyOn(controllerStub, 'handle')
+    const { sut } = makeSut()
 
     const httpRequest = {
       body: {
